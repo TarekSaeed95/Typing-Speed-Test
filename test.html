@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+     <style>
+    </style>
+  </head>
+  <body>
+    <div class="welcome">Typing Speed Test</div>
+    <div class="intro-screen">
+    <div class="selection"><div class="start-btn">start game</div>
+    <select name="lvl" id="selection">Choose Your Level
+      <option value="easy">easy</option>
+      <option value="normal">normal</option>
+      <option value="hard">hard</option>
+    </select>
+  </div></div>
+    <div class="container">
+      <div class="intro"> You Are Playing On [ <span class="lvl"></span> ] level And You Have  [ <span class="second"></span> ] Seconds to Type the word </div>
+        <div class="display-word"></div>
+        <input type="text" class="text" placeholder="input Your Text Here">
+        <div class="upcoming-word">
+          <div class="upcoming-words"></div>
+        </div>
+        <div class="footer">
+           <div class="left-area"> time left: <span class ="timer"></span> Seconds </div>
+           <div class="right-area">Score: <span class ="score"></span> from  <span class ="total-score"></span></div>
+        </div>
+    </div>
+    <div class="finish-letter">congrats</div>
+    <audio src="audio/Gameover.wav" id="gameover" preload="auto"></audio>
+    <audio src="audio/mixkit-arcade-retro-changing-tab-206.wav" id="success" preload="auto"></audio>
+    <audio src="audio/speck_-_Waiting_On_The_Precipice.mp3" id="gameplay" preload="auto"></audio>
+    <audio src="audio/SXVU8MC-brass-winner-fanfare.mp3" id="winner" preload="auto"></audio>
+    <script src="test.js"></script>
+  </body>
+</html>
